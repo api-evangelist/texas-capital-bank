@@ -1,0 +1,71 @@
+aid: texas-capital-bank
+name: Texas Capital Bank
+review:
+  question: Does Texas Capital Bank expose a public first-party developer API or portal?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Texas Capital Bank (Texas Capital Bancshares, NASDAQ: TCBI), a nationally
+    chartered Dallas-based commercial bank (~$31.5B assets, FYE 2025), does not
+    operate a public first-party developer portal and publishes no downloadable
+    OpenAPI/Swagger specification. Probing candidate hosts, developer.texascapitalbank.com
+    and developers.texascapitalbank.com do not resolve (DNS ENOTFOUND), while
+    api.texascapitalbank.com responds HTTP 403 — an internal or partner-gated
+    API gateway host, not public developer documentation. The bank does market
+    treasury and ERP API integrations on its "Application Programming Interface (API)"
+    commercial-banking product page (ConnectNow embedded banking for Sage and
+    NetSuite, direct platform integrations, custom APIs, and SFTP/XChange file
+    transfer), but access is arranged through dedicated bankers with a
+    "Contact Our Experts" flow rather than self-serve signup, and no endpoints,
+    base URL, auth model, or machine-readable spec are published. A third-party
+    API directory lists a "developer portal" at /who-we-serve/business/homebuilders-developers,
+    but that URL is a customer-segment page for real-estate homebuilders and
+    property developers, not a software developer portal — a false positive.
+    On the US open-finance dimension the honest posture is aggregator-only:
+    consumer-permissioned account and transaction data is shared through the
+    Finicity (Mastercard) aggregator, not a first-party API. No direct
+    FDX-conformant first-party data-access API and no published CFPB Section 1033
+    data-rights posture were found for this institution. No public authentication
+    model (OAuth2/OIDC, API key, or mTLS) is documented because there is no
+    public API surface. Spec provenance: none harvested (no public spec exists).
+  transports:
+    - protocol: REST
+      scheme: https
+      note: A gateway host api.texascapitalbank.com exists but returns HTTP 403 and is not publicly documented; no public REST reference is available.
+      documented: false
+    - protocol: SFTP
+      scheme: sftp
+      note: SFTP (XChange) secure file transfer is marketed as a treasury integration option, arranged via partner onboarding. Not a public API.
+      documented: true
+  developerPortal:
+    firstParty: false
+    url: ""
+    confirmedStatus: none
+    note: No first-party developer portal resolves. api.texascapitalbank.com=403 (gated); developer./developers. subdomains do not resolve.
+  openFinance:
+    fdxParticipant: false
+    section1033Posture: not-published
+    aggregatorAccess:
+      - Finicity
+    note: Consumer data access is aggregator-only via Finicity (Mastercard). Finicity uses FDX under the hood, but no direct FDX participation or 1033 posture is published by the bank.
+  authModel: none-public
+  openapiHarvested: false
+  specProvenance: none
+sources:
+  - url: https://texascapitalbank.com/commercial-banking/products-solutions/application-programming-interface
+    type: Documentation
+    note: Bank's API product page — markets ConnectNow, platform integrations, custom APIs, SFTP/XChange; "Contact Our Experts" flow, no self-serve docs or spec.
+  - url: https://texascapitalbank.com/who-we-serve/business/homebuilders-developers
+    type: Website
+    note: HTTP 200 but is a real-estate homebuilders/developers customer-segment page, not a software developer portal (false positive in third-party directories).
+  - url: https://apitracker.io/a/texascapitalbank
+    type: Reference
+    note: Third-party directory listing 1 "Native API" with a Swagger icon but no linked spec; auth fields blank; "developer portal" points to the homebuilders page.
+  - url: https://fintable.io/coverage/banks/United%20States/848_texas-capital-bank
+    type: Reference
+    note: Documents consumer account/transaction data access powered by Finicity (Mastercard) aggregator.
+  - url: https://en.wikipedia.org/wiki/Texas_Capital_Bank
+    type: Reference
+    note: "Institution identity — founded 1998, Dallas HQ, Texas Capital Bancshares (NASDAQ: TCBI), ~$31.5B assets FYE 2025."

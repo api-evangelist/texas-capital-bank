@@ -1,0 +1,82 @@
+aid: texas-capital-bank
+url: https://raw.githubusercontent.com/api-evangelist/texas-capital-bank/refs/heads/main/apis.yml
+name: Texas Capital Bank
+kind: company
+description: >-
+  Texas Capital Bank, National Association is the banking subsidiary of Texas
+  Capital Bancshares, Inc. (NASDAQ: TCBI), a Dallas-headquartered full-service
+  financial services firm founded in 1998 with roughly $31.5 billion in assets
+  (FYE 2025). As a nationally chartered commercial bank it serves businesses,
+  entrepreneurs, and institutions across Texas and the United States with
+  commercial and business banking, treasury management, mortgage/warehouse
+  finance, and investment banking. On the open-finance dimension the bank is
+  relationship-first rather than developer-first: it markets treasury and ERP
+  API integrations (including its ConnectNow embedded banking for Sage and
+  NetSuite, direct platform integrations, and SFTP/XChange file transfer) but
+  exposes them through partner onboarding with dedicated bankers, not a public
+  self-serve developer portal. There is no public first-party developer portal,
+  no downloadable OpenAPI/Swagger, and no self-serve API signup. Consumer
+  account and transaction data is made available to permissioned third parties
+  through the Finicity (Mastercard) aggregator rather than a first-party API,
+  which is the honest posture for most US regional banks under the voluntary,
+  fragmented US open-banking landscape (CFPB Section 1033 and the industry FDX
+  standard).
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- United States
+- Commercial Banking
+- Treasury Management
+- Regional Bank
+- Open Finance
+- Data Aggregation
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis:
+- aid: texas-capital-bank:treasury-erp-integration
+  name: Texas Capital Bank Treasury & ERP Integration APIs
+  description: >-
+    Relationship-based, partner-onboarded API and integration options for
+    treasury and ERP connectivity — including ConnectNow embedded banking for
+    Sage and NetSuite, direct platform integrations, custom APIs, and SFTP
+    (XChange) file transfer. Access is arranged with dedicated bankers; no
+    public developer portal, self-serve signup, or downloadable OpenAPI/Swagger
+    specification is published.
+  humanURL: https://texascapitalbank.com/commercial-banking/products-solutions/application-programming-interface
+  tags:
+  - Treasury
+  - ERP Integration
+  - Payments
+  properties:
+  - type: Documentation
+    url: https://texascapitalbank.com/commercial-banking/products-solutions/application-programming-interface
+- aid: texas-capital-bank:consumer-data-access
+  name: Consumer Data Access (Aggregator)
+  description: >-
+    Consumer-permissioned account and transaction data is made available to
+    third parties through the Finicity (Mastercard) data aggregator rather than
+    a first-party Texas Capital Bank API. This is the honest US open-finance
+    posture for the institution — no direct FDX-conformant or first-party
+    data-access API is publicly documented.
+  humanURL: https://fintable.io/coverage/banks/United%20States/848_texas-capital-bank
+  tags:
+  - Open Finance
+  - Data Aggregation
+  - Finicity
+  properties:
+  - type: Documentation
+    url: https://fintable.io/coverage/banks/United%20States/848_texas-capital-bank
+common:
+- type: Website
+  url: https://texascapitalbank.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/texas-capital-bank
+- type: Blog
+  url: https://texascapitalbank.com/insights
+- type: PrivacyPolicy
+  url: https://texascapitalbank.com/online-privacy-policy-url
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
