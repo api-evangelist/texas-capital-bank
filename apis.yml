@@ -69,12 +69,16 @@ apis:
   - type: Documentation
     url: https://fintable.io/coverage/banks/United%20States/848_texas-capital-bank
 common:
+- type: DomainSecurity
+  url: security/texas-capital-bank-domain-security.yml
 - type: Website
   url: https://texascapitalbank.com/
 - type: LinkedIn
   url: https://www.linkedin.com/company/texas-capital-bank
 - type: Blog
   url: https://texascapitalbank.com/insights
+- type: Support
+  url: https://www.texascapitalbank.com/helpful-information/contact-us
 - type: PrivacyPolicy
   url: https://texascapitalbank.com/online-privacy-policy-url
 maintainers:
