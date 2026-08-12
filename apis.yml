@@ -21,6 +21,17 @@ description: >-
   which is the honest posture for most US regional banks under the voluntary,
   fragmented US open-banking landscape (CFPB Section 1033 and the industry FDX
   standard).
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-11'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Financial Services
