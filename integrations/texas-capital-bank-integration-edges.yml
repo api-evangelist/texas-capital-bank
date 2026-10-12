@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/texas-capital-bank/integrations
+- https://n8n.io/integrations/texas-capital-bank/
+- https://composio.dev/toolkits/texas-capital-bank
+- https://monid.ai/tools/texas-capital-bank
+checked:
+- https://composio.dev/toolkits/texas-capital-bank
+- https://monid.ai/tools/texas-capital-bank
+- https://n8n.io/integrations/texas-capital-bank/
+- https://zapier.com/apps/texas-capital-bank/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
