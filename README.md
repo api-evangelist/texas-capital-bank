@@ -1,4 +1,4 @@
-# Texas Capital Bank (texas-capital-bank)
+# Texas Capital Bank
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,80 +64,87 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Texas Capital Bank, National Association is the banking subsidiary of Texas Capital Bancshares, Inc. (NASDAQ: TCBI), a Dallas-headquartered full-service financial services firm founded in 1998 with roughly $31.5 billion in assets (FYE 2025). It serves businesses, entrepreneurs, and institutions across Texas and the United States with commercial and business banking, treasury management, mortgage/warehouse finance, and investment banking.
+Texas Capital Bank, National Association is the banking subsidiary of Texas Capital Bancshares, Inc. (NASDAQ: TCBI), a Dallas-headquartered full-service financial services firm founded in 1998 with roughly $31.5 billion in assets (FYE 2025). As a nationally chartered commercial bank it serves businesses, entrepreneurs, and institutions across Texas and the United States with commercial and business banking, treasury management, mortgage/warehouse finance, and investment banking. On the open-finance dimension the bank is relationship-first rather than developer-first: it markets treasury and ERP API integrations (including its ConnectNow embedded banking for Sage and NetSuite, direct platform integrations, and SFTP/XChange file transfer) but exposes them through partner onboarding with dedicated bankers, not a public self-serve developer portal. There is no public first-party developer portal, no downloadable OpenAPI/Swagger, and no self-serve API signup. Consumer account and transaction data is made available to permissioned third parties through the Finicity (Mastercard) aggregator rather than a first-party API, which is the honest posture for most US regional banks under the voluntary, fragmented US open-banking landscape (CFPB Section 1033 and the industry FDX standard).
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/texas-capital-bank/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/texas-capital-bank/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · United States · Commercial Banking · Treasury Management · Regional Bank · Open Finance
 
-## Open Finance & API Posture
+## Texas Capital Bank on APIs.io
 
-Texas Capital Bank is relationship-first, not developer-first. It markets treasury and ERP API integrations, but arranges them through partner onboarding with dedicated bankers rather than a public self-serve developer portal.
+Everything profiled for Texas Capital Bank is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/texas-capital-bank/](https://apis.io/providers/texas-capital-bank/)** — or go straight to one of the APIs or properties below.
 
-- **No public first-party developer portal.** `developer.texascapitalbank.com` and `developers.texascapitalbank.com` do not resolve; `api.texascapitalbank.com` exists but returns HTTP 403 (an internal/gated gateway host, not public documentation).
-- **No downloadable OpenAPI/Swagger** and **no self-serve API signup** are published.
-- **Documented, partner-gated integrations:** ConnectNow embedded banking for Sage and NetSuite, direct platform integrations, custom APIs, and SFTP (XChange) file transfer, described on the bank's Application Programming Interface (API) product page.
-- **Consumer data access is aggregator-only:** permissioned account and transaction data is shared through the Finicity (Mastercard) aggregator, not a first-party API.
-- **US open-finance context:** participation is voluntary and fragmented under CFPB Section 1033 and the industry FDX standard; no direct FDX-conformant first-party data-access API or published 1033 posture was found for this institution.
+### APIs (2)
 
-Note: the third-party "developer portal" URL sometimes attributed to Texas Capital Bank (`/who-we-serve/business/homebuilders-developers`) is a customer-segment page for real-estate homebuilders and property developers, not a software developer portal.
+- [Texas Capital Bank Treasury & ERP Integration APIs](https://apis.io/apis/texas-capital-bank/treasury-erp-integration/) — Relationship-based, partner-onboarded API and integration options for treasury and ERP connectivity — including ConnectNow embedded banking for Sage and…
+- [Consumer Data Access (Aggregator)](https://apis.io/apis/texas-capital-bank/consumer-data-access/) — Consumer-permissioned account and transaction data is made available to third parties through the Finicity (Mastercard) data aggregator rather than a…
 
-## Tags
+### Published properties
 
-- Financial Services
-- Banking
-- United States
-- Commercial Banking
-- Treasury Management
-- Regional Bank
-- Open Finance
-- Data Aggregation
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### Security (1)
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+Authentication, trust centre, and vulnerability disclosure.
 
-## APIs
+- [Texas Capital Bank Domain Security](https://apis.io/security/texas-capital-bank/texas-capital-bank-domain-security/)
 
-### Texas Capital Bank Treasury & ERP Integration APIs
+## Where to find this API
 
-Relationship-based, partner-onboarded API and integration options for treasury and ERP connectivity — ConnectNow embedded banking for Sage and NetSuite, direct platform integrations, custom APIs, and SFTP (XChange) file transfer. No public developer portal or downloadable specification.
-
-- **Human URL:** [https://texascapitalbank.com/commercial-banking/products-solutions/application-programming-interface](https://texascapitalbank.com/commercial-banking/products-solutions/application-programming-interface)
-
-#### Tags
-
-- Treasury
-- ERP Integration
-- Payments
-
-#### Properties
-
-- [Documentation](https://texascapitalbank.com/commercial-banking/products-solutions/application-programming-interface)
-
-### Consumer Data Access (Aggregator)
-
-Consumer-permissioned account and transaction data made available to third parties through the Finicity (Mastercard) data aggregator rather than a first-party Texas Capital Bank API.
-
-- **Human URL:** [https://fintable.io/coverage/banks/United%20States/848_texas-capital-bank](https://fintable.io/coverage/banks/United%20States/848_texas-capital-bank)
-
-#### Tags
-
-- Open Finance
-- Data Aggregation
-- Finicity
-
-#### Properties
-
-- [Documentation](https://fintable.io/coverage/banks/United%20States/848_texas-capital-bank)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://texascapitalbank.com/)
-- [LinkedIn](https://www.linkedin.com/company/texas-capital-bank)
+- [Support](https://www.texascapitalbank.com/helpful-information/contact-us)
 - [Blog](https://texascapitalbank.com/insights)
-- [Privacy Policy](https://texascapitalbank.com/online-privacy-policy-url)
+- [Privacy policy](https://texascapitalbank.com/online-privacy-policy-url)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 9.3** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 10.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 7.9** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/texas-capital-bank/](https://apis.io/providers/texas-capital-bank/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Texas Capital Bank: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/texas-capital-bank/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
